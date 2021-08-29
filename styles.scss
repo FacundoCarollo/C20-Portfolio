@@ -1,5 +1,79 @@
 @import url(node_modules/bootstrap/scss/bootstrap.scss);
 
-.tit {
-    color: blue;
+* {
+    padding: 0;
+    margin: 0;
 }
+body {
+    width: 100%;
+    box-sizing: content-box;
+}
+// HEADER
+header {
+    height: 100vh;
+
+    .navbar {
+        height: 60px;
+        background-color: rgba(255, 255, 255, 0.501);
+        z-index: 0;
+        position: fixed;
+        width: 100% !important;
+
+        .navbar-nav {
+            display: flex;
+            justify-content: space-evenly !important;
+            width: 100%;
+        }
+        .navbar-brand {
+            font-size: 2em !important;
+        }
+        .nl:focus {
+            text-decoration: underline orange 3px;
+        }
+
+        .trans {
+            display: flex;
+            flex-direction: row;
+        }
+    }
+
+    .hvid {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        position: absolute;
+    }
+
+    .title {
+        padding-top: 8em !important;
+    }
+        .tit {
+            color: rgb(0, 0, 0);
+            font-size: 4em;   
+        }
+        .subtit {
+            font-style: oblique;
+        }
+    
+    .btn-h {
+        justify-content: center;
+    }
+        .btn {
+            height: 40px;
+            width: 180px;
+            background-color: rgba(0, 0, 0, 0);
+            border-radius: 25px 25px 25px;
+            border: 1px solid orange;
+            margin-top: 5%;
+            transition: 0.5s;
+        }
+
+        .btn:hover {
+            background-color: orange;
+        }
+    
+}
+
+// MAIN
+

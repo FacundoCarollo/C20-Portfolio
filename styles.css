@@ -1,5 +1,96 @@
 @import url(node_modules/bootstrap/scss/bootstrap.scss);
-.tit {
-  color: blue;
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  width: 100%;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+}
+
+header {
+  height: 100vh;
+}
+
+header .navbar {
+  height: 60px;
+  background-color: rgba(255, 255, 255, 0.501);
+  z-index: 0;
+  position: fixed;
+  width: 100% !important;
+}
+
+header .navbar .navbar-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly !important;
+      -ms-flex-pack: space-evenly !important;
+          justify-content: space-evenly !important;
+  width: 100%;
+}
+
+header .navbar .navbar-brand {
+  font-size: 2em !important;
+}
+
+header .navbar .nl:focus {
+  -webkit-text-decoration: underline orange 3px;
+          text-decoration: underline orange 3px;
+}
+
+header .navbar .trans {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+header .hvid {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  position: absolute;
+}
+
+header .title {
+  padding-top: 8em !important;
+}
+
+header .tit {
+  color: black;
+  font-size: 4em;
+}
+
+header .subtit {
+  font-style: oblique;
+}
+
+header .btn-h {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header .btn {
+  height: 40px;
+  width: 180px;
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 25px 25px 25px;
+  border: 1px solid orange;
+  margin-top: 5%;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+header .btn:hover {
+  background-color: orange;
 }
 /*# sourceMappingURL=styles.css.map */
