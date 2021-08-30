@@ -6,8 +6,8 @@
 
 body {
   width: 100%;
-  -webkit-box-sizing: content-box;
-          box-sizing: content-box;
+  box-sizing: content-box;
+  overflow-x: hidden;
 }
 
 header {
@@ -23,12 +23,8 @@ header .navbar {
 }
 
 header .navbar .navbar-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly !important;
-      -ms-flex-pack: space-evenly !important;
-          justify-content: space-evenly !important;
+  justify-content: space-evenly !important;
   width: 100%;
 }
 
@@ -37,23 +33,16 @@ header .navbar .navbar-brand {
 }
 
 header .navbar .nl:focus {
-  -webkit-text-decoration: underline orange 3px;
-          text-decoration: underline orange 3px;
+  text-decoration: underline orange 3px;
 }
 
 header .navbar .trans {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  flex-direction: row;
 }
 
 header .hvid {
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   width: 100%;
   height: 100%;
   z-index: -1;
@@ -74,9 +63,7 @@ header .subtit {
 }
 
 header .btn-h {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 
 header .btn {
@@ -86,11 +73,104 @@ header .btn {
   border-radius: 25px 25px 25px;
   border: 1px solid orange;
   margin-top: 5%;
-  -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 
 header .btn:hover {
   background-color: orange;
+}
+
+.equipo {
+  margin-top: 1.5em;
+  width: 100%;
+  border: 1px solid red;
+  padding: 0;
+}
+
+.persona {
+  width: 100%;
+  height: 18vh;
+  padding: 0;
+}
+
+.cont {
+  padding-top: 0.6em;
+  height: 15vh;
+  z-index: 1;
+  width: 100%;
+  color: white;
+}
+
+.cont:hover {
+  color: black;
+}
+
+.forma1 {
+  position: absolute;
+  height: 15vh;
+  background-color: #183f57;
+  border-top-right-radius: 100px 100px;
+  border-bottom-right-radius: 100px 100px;
+  width: 70%;
+  padding: 0;
+  transition: 0.5s;
+  z-index: 0;
+}
+
+.forma2 {
+  position: absolute;
+  height: 15vh;
+  background-color: #183f57;
+  border-top-left-radius: 100px 100px;
+  border-bottom-left-radius: 100px 100px;
+  width: 70%;
+  padding: 0;
+  transition: 0.5s;
+  z-index: 0;
+}
+
+.cont:hover ~ .forma1 {
+  background-color: orange;
+  width: 105%;
+}
+
+.cont:hover ~ .forma2 {
+  background-color: orange;
+  width: 105%;
+}
+
+.fot1 {
+  position: absolute;
+  object-fit: cover;
+  height: 250px;
+  width: 250px;
+  border-radius: 100%;
+  z-index: 1;
+  left: 10%;
+}
+
+.fot2 {
+  position: absolute;
+  object-fit: cover;
+  height: 250px;
+  width: 250px;
+  border-radius: 100%;
+  z-index: 1;
+  right: 10%;
+}
+
+.btn-e {
+  height: 40px;
+  width: 180px;
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 25px 25px 25px;
+  border: 1px solid yellow;
+  transition: 0.5s;
+  color: white;
+}
+
+.btn-e:hover {
+  background-color: yellow;
+  color: black;
 }
 /*# sourceMappingURL=styles.css.map */
