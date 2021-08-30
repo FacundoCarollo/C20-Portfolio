@@ -93,4 +93,30 @@ header .btn {
 header .btn:hover {
   background-color: orange;
 }
+
+main {
+  height: 300vh;
+  background-color: #cacac2;
+}
+
+main .moveimg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+main .moveimg p {
+  width: 400px;
+  background-color: antiquewhite;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+main .moveimg img {
+  height: 400px;
+  width: 400px;
+}
 /*# sourceMappingURL=styles.css.map */

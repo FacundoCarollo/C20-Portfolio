@@ -76,4 +76,22 @@ header {
 }
 
 // MAIN
+main{
+    height: 300vh;
+    background-color: rgb(202, 202, 194);
+    .moveimg{
+        display: flex;
+        justify-content: space-around;
+        ;
+    }
+    .moveimg p{
+        width: 400px;
+        background-color: antiquewhite;
+        align-self: center;
+    }
+    .moveimg img{
+        height: 400px;
+        width: 400px;
+    }
+}
 
