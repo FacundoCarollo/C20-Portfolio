@@ -81,6 +81,42 @@ header .btn:hover {
   background-color: orange;
 }
 
+.first {
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
+
+.tit_1 {
+  font-size: 1.2em;
+}
+
+.containerforma {
+  width: 100%;
+  padding: 0;
+  margin-top: 50px;
+  height: 200px;
+}
+
+.forma-tit {
+  z-index: 1;
+  width: 100%;
+}
+
+.formasubtit {
+  position: absolute;
+  height: 12vh;
+  background-color: #46b594;
+  border-top-right-radius: 100px 100px;
+  border-bottom-right-radius: 100px 100px;
+  width: 70%;
+  padding: 0;
+  z-index: 0;
+}
+
+.servicios {
+  height: 500px;
+}
+
 .equipo {
   margin-top: 1.5em;
   width: 100%;
