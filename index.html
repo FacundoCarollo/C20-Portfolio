@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,500;1,100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="styles.css">
 	<link rel="shortcut icon" href="assets/logoc20.png" />
     <title>C20 | Portfolio</title>
@@ -16,10 +17,10 @@
     <!-- *** HEADER *** -->
     <header>
     <!-- navbar -->
-        <nav class="navbar navbar-expand-lg navbar-light">
+        <nav class="navbar navbar-expand-lg navbar-dark">
             <div class="container-fluid">
 				<img src="assets/logoc20.png" height="50px" width="50px">
-                <a class="navbar-brand" href="#">C20</a>
+                <a class="navbar-brand" href="#" id="headernavbartit">C20</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -56,10 +57,9 @@
     <!-- PRIMER SECCION SIN NOMRE -->
     <div class="container-fluid first">
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 justify-content-center">
-            <div class="col">
-
+            <div class="col" data-aos-easing="ease-in-out" data-aos="fade-up" data-aos-delay="100">
                 <div class="row">
-                    <div class="col text-center">
+                    <div class="col-3 text-center">
                         <img src="assets/istotypedemo.png" width="100px" height="100px">
                     </div>
                     <div class="col">
@@ -69,9 +69,9 @@
                 </div>
                 
             </div>
-            <div class="col">
+            <div class="col" data-aos-easing="ease-in-out" data-aos="fade-up" data-aos-delay="250">
                 <div class="row">
-                    <div class="col text-center">
+                    <div class="col-3 text-center">
                         <img src="assets/istotypedemo.png" width="100px" height="100px">
                     </div>
                     <div class="col">
@@ -81,9 +81,9 @@
                 </div>
                 
             </div>
-            <div class="col">
+            <div class="col" data-aos-easing="ease-in-out" data-aos="fade-up" data-aos-delay="350">
                 <div class="row">
-                    <div class="col text-center">
+                    <div class="col-3 text-center">
                         <img src="assets/istotypedemo.png" width="100px" height="100px">
                     </div>
                     <div class="col">
@@ -96,33 +96,69 @@
         </div>
     </div>
     <!-- SERVICIOS -->
-    <div class="containerforma text-center d-flex align-items-center">
+    <div class="containerforma text-center d-flex align-items-center" data-aos-easing="ease-in-out" data-aos="slide-right" data-aos-delay="200">
         <h2 class="container-fluid forma-tit">Servicios</h2>
         <div class="formasubtit"></div>
     </div>
-
-
-
-
     <div class="container-fluid servicios">
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 justify-content-center">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 justify-content-center text-center">
             <div class="col">
-
-            
+                <img src="assets/cardproyectdemo.png" width="300px" height="300px">            
             </div>
             <div class="col">
-                
-                
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates iusto, cum dicta fugiat ullam tempore? Rerum, voluptatem veritatis consectetur voluptates eius officia perspiciatis illum, doloribus ut eaque quidem at vitae eligendi molestiae totam quae saepe! Ratione reiciendis, nemo sint quam facilis, a optio sunt praesentium at quo eaque ad! Cupiditate, in error exercitationem aperiam placeat quos at quaerat quasi, hic odio ad! Incidunt, illum harum. Explicabo, quasi ex? Neque, veritatis pariatur reprehenderit amet, quisquam esse, laboriosam libero cumque unde cum autem laudantium blanditiis ipsum! Autem, est enim. At velit facere quis optio autem eligendi animi officia ea, recusandae, praesentium hic?</p>
+                <button class="btn-s">Ver más</button>
             </div>
             <div class="col">
-            
-            
+                <img src="assets/cardproyectdemo.png"  width="300px" height="300px"> 
             </div>
         </div>
     </div>
 
+    <!-- COMO CREAMOS TU PROYECTO -->
+    <div class="container-fluid cctp">
+        <h2 class="text-center pb-3">Como creamos tu proyecto</h2>
+        <div class="container text-center secciones">
+            <div class="row sec align-items-end">
+                <div class="col seccion" onclick="a()">
+                    <p class="sec_cont">1. Contacto y asesoramiento.</p>
+                    <img class="circulo">
+                </div>
+                <div class="col seccion" onclick="b()">
+                    <p class="sec_cont">2. Investigación y trabajo interno.</p>
+                    <img class="circulo">
+                </div>
+                <div class="col seccion" onclick="c()">
+                    <p class="sec_cont">3. Diseño y presentacion de prototipo.</p>
+                    <img class="circulo">
+                </div>
+                <div class="col seccion" onclick="d()">
+                    <p class="sec_cont">4. Desarrollo y entrega final.</p>
+                    <img class="circulo">
+                </div>
+            </div>
+        </div>
 
+        <div class="desc row">
+            <div class="col clearfix" id="a">
+                <img src="assets/facu.png" class="col-md-6 float-md-start me-4 ms-md-3 imagen" >
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia tempore aliquid provident culpa magnam quos quidem perspiciatis magni. Officiis quaerat impedit voluptatibus quisquam sapiente? Repellat sint voluptatem voluptatibus eos harum.</p>
+            </div>
+            <div class="col clearfix" id="b">
+                <img src="assets/facu.png" class="col-md-6 float-md-start me-4 ms-md-3 imagen" >
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia tempore aliquid provident culpa magnam quos quidem perspiciatis magni. Officiis quaerat impedit voluptatibus quisquam sapiente? Repellat sint voluptatem voluptatibus eos harum.</p>
+            </div>
+            <div class="col clearfix" id="c">
+                <img src="assets/facu.png" class="col-md-6 float-md-end me-4 ms-md-3 imagen" >
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia tempore aliquid provident culpa magnam quos quidem perspiciatis magni. Officiis quaerat impedit voluptatibus quisquam sapiente? Repellat sint voluptatem voluptatibus eos harum.</p>
+            </div>
+            <div class="col clearfix" id="d">
+                <img src="assets/facu.png" class="col-md-6 float-md-end me-4 ms-md-3 imagen" >
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia tempore aliquid provident culpa magnam quos quidem perspiciatis magni. Officiis quaerat impedit voluptatibus quisquam sapiente? Repellat sint voluptatem voluptatibus eos harum.</p>
+            </div>
+        </div>
 
+    </div>
 
     <!-- las fotos hay que importarlas con un tamaño predefinido asi no le ponemos el tamaño en px -->
     <div>
@@ -137,10 +173,9 @@
                     <p>Técnico Superior en Análisis de Sistemas</p>
                     <button class="btn-e">Ver más</button>
                 </div>
-                <div class="forma1">
+                <div class="forma1" data-aos-easing="ease-in-out" data-aos="slide-right" data-aos-delay="200">
                 </div>              
             </div>
-
 
             <div class="container-fluid persona d-flex align-items-end justify-content-end">
                 <img class="img-fluid fot2" src="assets/cami.png">
@@ -149,10 +184,9 @@
                     <p>Licenciada en Diseño</p>
                     <button class="btn-e">Ver más</button>
                 </div>
-                <div class="forma2">
+                <div class="forma2" data-aos-easing="ease-in-out" data-aos="slide-left" data-aos-delay="300">
                 </div>              
             </div>
-
 
             <div class="container-fluid persona d-flex align-items-end">
                 <img class="img-fluid fot1" src="assets/fran.png">
@@ -161,12 +195,9 @@
                     <p>Técnico Superior en Análisis de Sistemas</p>
                     <button class="btn-e">Ver más</button>
                 </div>
-                <div class="forma1">
+                <div class="forma1" data-aos-easing="ease-in-out" data-aos="slide-right" data-aos-delay="400">
                 </div>              
             </div>
-
-
-
 
             <div class="container-fluid persona d-flex align-items-end justify-content-end">
                 <img class="img-fluid fot2" src="assets/facu.png">
@@ -175,7 +206,7 @@
                     <p>Técnico Superior en Análisos de Sistemas</p>
                     <button class="btn-e">Ver más</button>
                 </div>
-                <div class="forma2">
+                <div class="forma2" data-aos-easing="ease-in-out" data-aos="slide-left" data-aos-delay="500">
                 </div>              
             </div>
         </div>
@@ -183,7 +214,11 @@
 	
 
     <!-- *** FOOTER ***  -->
-
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+AOS.init();
+</script>
+<script src="main.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
 </body>

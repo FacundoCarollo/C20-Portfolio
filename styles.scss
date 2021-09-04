@@ -8,18 +8,21 @@
 body {
     width: 100%;
     box-sizing: content-box;
-    overflow-x:hidden;
+    overflow-x: hidden;
 }
 // HEADER
 header {
     height: 100vh;
+    background-color:rgba(0, 0, 0, 0.65);
+    color: white;
 
     .navbar {
         height: 60px;
-        background-color: rgba(255, 255, 255, 0.501);
+        background-color: rgba(255, 255, 255, 0);
         z-index: 0;
         position: fixed;
         width: 100% !important;
+        transition: 0.3s ease-in-out;
 
         .navbar-nav {
             display: flex;
@@ -38,6 +41,11 @@ header {
             flex-direction: row;
         }
     }
+    .nav-active {
+        background-color:rgb(17, 17, 17);
+        box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.5);
+        z-index: 2;
+    }
 
     .hvid {
         object-fit: cover;
@@ -51,7 +59,8 @@ header {
         padding-top: 8em !important;
     }
         .tit {
-            color: rgb(0, 0, 0);
+            // color: rgb(0, 0, 0);
+            color: white;
             font-size: 4em;   
         }
         .subtit {
@@ -69,17 +78,19 @@ header {
             border: 1px solid orange;
             margin-top: 5%;
             transition: 0.5s;
+            color: white;
         }
 
         .btn:hover {
             background-color: orange;
+            color: black;
         }
 }
+
 
 // MAIN
 .first {
     margin-top: 1.5em;
-    margin-bottom: 1.5em;
 }
 .tit_1 {
     font-size: 1.2em;
@@ -88,7 +99,7 @@ header {
 .containerforma {
     width: 100%;
     padding: 0;
-    margin-top: 50px;
+    margin-top: 15px;
     height: 200px;
 }
 .forma-tit {
@@ -109,15 +120,81 @@ header {
 
 //servicios
 .servicios {
-    height: 500px;
+    height: 50vh;
 }
+.btn-s {
+    height: 40px;
+    width: 180px;
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 25px 25px 25px;
+    border: 1px solid #46b594;
+    margin-top: 5%;
+    transition: 0.5s;
+}
+
+.btn-s:hover {
+    background-color: #46b594;
+}
+
+//Cctp 
+.cctp {
+    height: auto;
+    margin-bottom: 1em;
+}
+.secciones {
+    height: 7vh;
+    background-color:#fecc45;
+    border-top-right-radius: 100px 100px;
+    border-bottom-right-radius: 100px 100px;
+    border-top-left-radius: 100px 100px;
+    border-bottom-left-radius: 100px 100px;
+    width: 100%;
+    margin-bottom: 25px;
+}
+.sec {
+    width: 100%;
+    height: 100%;
+}
+.sec_cont{
+    margin: 1px;
+}
+.seccion {
+    position: relative;
+    width: 100%;
+    height: 70%;
+}
+.circulo {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    background-color: orange;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+.seccion:hover {
+    font-weight: bold;
+}
+
+.desc {
+    width: 100%;
+    .imagen {
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.562);
+    }
+}
+#a {
+
+}
+
 
 
 //Equipo
 .equipo {
     margin-top: 1.5em;
     width: 100%;
-    border: 1px solid red;
     padding: 0;
 }
 .persona {
