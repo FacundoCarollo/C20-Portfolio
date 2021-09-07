@@ -11,6 +11,52 @@ body {
   overflow-x: hidden;
 }
 
+.containerforma {
+  width: 100%;
+  padding: 0;
+  margin-top: 15px;
+  height: 200px;
+}
+
+.forma-tit {
+  z-index: 1;
+  width: 100%;
+}
+
+.formasubtit {
+  position: absolute;
+  height: 12vh;
+  background-color: #46b594;
+  border-top-right-radius: 100px 100px;
+  border-bottom-right-radius: 100px 100px;
+  width: 70%;
+  padding: 0;
+  z-index: 0;
+}
+
+.formasubtit2 {
+  position: absolute;
+  height: 12vh;
+  background-color: #46b594;
+  border-top-left-radius: 100px 100px;
+  border-bottom-left-radius: 100px 100px;
+  width: 70%;
+  padding: 0;
+  z-index: 0;
+}
+
+.formasubtit3 {
+  position: absolute;
+  height: 7vh;
+  border-top-left-radius: 100px 100px;
+  border-bottom-left-radius: 100px 100px;
+  border-top-right-radius: 100px 100px;
+  border-bottom-right-radius: 100px 100px;
+  width: 70%;
+  padding: 0;
+  z-index: 0;
+}
+
 header {
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.65);
@@ -37,7 +83,7 @@ header .navbar .navbar-brand {
 }
 
 header .navbar .nl:focus {
-  text-decoration: underline orange 3px;
+  text-decoration: underline #f08036 3px;
 }
 
 header .navbar .trans {
@@ -46,7 +92,7 @@ header .navbar .trans {
 }
 
 header .nav-active {
-  background-color: #111111;
+  background-color: #464646;
   box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.5);
   z-index: 2;
 }
@@ -81,14 +127,14 @@ header .btn {
   width: 180px;
   background-color: rgba(0, 0, 0, 0);
   border-radius: 25px 25px 25px;
-  border: 1px solid orange;
+  border: 1px solid #fecc45;
   margin-top: 5%;
   transition: 0.5s;
   color: white;
 }
 
 header .btn:hover {
-  background-color: orange;
+  background-color: #fecc45;
   color: black;
 }
 
@@ -98,29 +144,6 @@ header .btn:hover {
 
 .tit_1 {
   font-size: 1.2em;
-}
-
-.containerforma {
-  width: 100%;
-  padding: 0;
-  margin-top: 15px;
-  height: 200px;
-}
-
-.forma-tit {
-  z-index: 1;
-  width: 100%;
-}
-
-.formasubtit {
-  position: absolute;
-  height: 12vh;
-  background-color: #46b594;
-  border-top-right-radius: 100px 100px;
-  border-bottom-right-radius: 100px 100px;
-  width: 70%;
-  padding: 0;
-  z-index: 0;
 }
 
 .servicios {
@@ -143,7 +166,7 @@ header .btn:hover {
 
 .cctp {
   height: auto;
-  margin-bottom: 1em;
+  margin-bottom: 1.5em;
 }
 
 .secciones {
@@ -176,7 +199,7 @@ header .btn:hover {
   width: 40px;
   height: 40px;
   border-radius: 100%;
-  background-color: orange;
+  background-color: #f08036;
   position: absolute;
   margin-left: auto;
   margin-right: auto;
@@ -229,7 +252,7 @@ header .btn:hover {
   border-bottom-right-radius: 100px 100px;
   width: 70%;
   padding: 0;
-  transition: 0.5s;
+  transition: 0.5s !important;
   z-index: 0;
 }
 
@@ -241,17 +264,17 @@ header .btn:hover {
   border-bottom-left-radius: 100px 100px;
   width: 70%;
   padding: 0;
-  transition: 0.5s;
+  transition: 0.5s !important;
   z-index: 0;
 }
 
 .cont:hover ~ .forma1 {
-  background-color: orange;
+  background-color: #f08036;
   width: 105%;
 }
 
 .cont:hover ~ .forma2 {
-  background-color: orange;
+  background-color: #f08036;
   width: 105%;
 }
 
@@ -280,13 +303,69 @@ header .btn:hover {
   width: 180px;
   background-color: rgba(0, 0, 0, 0);
   border-radius: 25px 25px 25px;
-  border: 1px solid yellow;
+  border: 1px solid #fecc45;
   transition: 0.5s;
   color: white;
 }
 
 .btn-e:hover {
-  background-color: yellow;
+  background-color: #fecc45;
   color: black;
+}
+
+.frm {
+  background-color: #b6b6b6;
+}
+
+.btn-tj {
+  height: 40px;
+  width: 180px;
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 25px 25px 25px;
+  border: 1px solid #46b594;
+  transition: 0.5s;
+  color: black;
+}
+
+.btn-tj:hover {
+  background-color: #183f57;
+  color: white;
+}
+
+.footer {
+  min-height: 35vh;
+  background-color: #b6b6b6;
+}
+
+.containerforma1 {
+  width: 100%;
+  padding: 0;
+  margin-top: 15px;
+  height: 100px;
+}
+
+.tclqt {
+  padding-top: 1em;
+  margin-bottom: 0.5em;
+}
+
+.tec {
+  z-index: 10;
+}
+
+.foo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.trans {
+  display: flex;
+  flex-direction: row;
+}
+
+.trans .tl {
+  color: black;
+  margin-right: 15px;
 }
 /*# sourceMappingURL=styles.css.map */

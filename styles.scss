@@ -1,5 +1,11 @@
 @import url(node_modules/bootstrap/scss/bootstrap.scss);
 
+$azulc20: #183f57;
+$verdec20: #46b594;
+$amarilloc20: #fecc45;
+$naranjac20: #f08036;
+$verdelc20: #a2ca71;
+
 * {
     padding: 0;
     margin: 0;
@@ -10,6 +16,51 @@ body {
     box-sizing: content-box;
     overflow-x: hidden;
 }
+
+//Titulos divisorios
+.containerforma {
+    width: 100%;
+    padding: 0;
+    margin-top: 15px;
+    height: 200px;
+}
+.forma-tit {
+    z-index: 1;
+    width: 100%;
+}
+.formasubtit {
+    position: absolute;
+    height: 12vh;
+    background-color: $verdec20;
+    border-top-right-radius: 100px 100px ;
+    border-bottom-right-radius: 100px 100px;
+    width: 70%;
+    padding: 0;
+    z-index: 0;
+}
+.formasubtit2 {
+    position: absolute;
+    height: 12vh;
+    background-color: $verdec20;
+    border-top-left-radius: 100px 100px ;
+    border-bottom-left-radius: 100px 100px;
+    width: 70%;
+    padding: 0;
+    z-index: 0;
+}
+.formasubtit3 {
+    position: absolute;
+    height: 7vh;
+    border-top-left-radius: 100px 100px;
+    border-bottom-left-radius: 100px 100px;
+    border-top-right-radius: 100px 100px;
+    border-bottom-right-radius: 100px 100px;
+    width: 70%;
+    padding: 0;
+    z-index: 0;
+}
+
+
 // HEADER
 header {
     height: 100vh;
@@ -33,7 +84,7 @@ header {
             font-size: 2em !important;
         }
         .nl:focus {
-            text-decoration: underline orange 3px;
+            text-decoration: underline $naranjac20 3px;
         }
 
         .trans {
@@ -42,7 +93,7 @@ header {
         }
     }
     .nav-active {
-        background-color:rgb(17, 17, 17);
+        background-color:rgb(70, 70, 70);
         box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.5);
         z-index: 2;
     }
@@ -75,14 +126,14 @@ header {
             width: 180px;
             background-color: rgba(0, 0, 0, 0);
             border-radius: 25px 25px 25px;
-            border: 1px solid orange;
+            border: 1px solid $amarilloc20;
             margin-top: 5%;
             transition: 0.5s;
             color: white;
         }
 
         .btn:hover {
-            background-color: orange;
+            background-color: $amarilloc20;
             color: black;
         }
 }
@@ -96,27 +147,6 @@ header {
     font-size: 1.2em;
 }
 
-.containerforma {
-    width: 100%;
-    padding: 0;
-    margin-top: 15px;
-    height: 200px;
-}
-.forma-tit {
-    z-index: 1;
-    width: 100%;
-}
-.formasubtit {
-    position: absolute;
-    height: 12vh;
-    background-color:#46b594;
-    border-top-right-radius: 100px 100px ;
-    border-bottom-right-radius: 100px 100px;
-    width: 70%;
-    padding: 0;
-    z-index: 0;
-}
-
 
 //servicios
 .servicios {
@@ -127,23 +157,23 @@ header {
     width: 180px;
     background-color: rgba(0, 0, 0, 0);
     border-radius: 25px 25px 25px;
-    border: 1px solid #46b594;
+    border: 1px solid $verdec20;
     margin-top: 5%;
     transition: 0.5s;
 }
 
 .btn-s:hover {
-    background-color: #46b594;
+    background-color: $verdec20;
 }
 
 //Cctp 
 .cctp {
     height: auto;
-    margin-bottom: 1em;
+    margin-bottom: 1.5em;
 }
 .secciones {
     height: 7vh;
-    background-color:#fecc45;
+    background-color: $amarilloc20;
     border-top-right-radius: 100px 100px;
     border-bottom-right-radius: 100px 100px;
     border-top-left-radius: 100px 100px;
@@ -167,7 +197,7 @@ header {
     width: 40px;
     height: 40px;
     border-radius: 100%;
-    background-color: orange;
+    background-color: $naranjac20;
     position: absolute;
     margin-left: auto;
     margin-right: auto;
@@ -185,11 +215,6 @@ header {
         box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.562);
     }
 }
-#a {
-
-}
-
-
 
 //Equipo
 .equipo {
@@ -215,31 +240,31 @@ header {
 .forma1 {
     position: absolute;
     height: 15vh;
-    background-color: #183f57;
+    background-color: $azulc20;
     border-top-right-radius: 100px 100px ;
     border-bottom-right-radius: 100px 100px;
     width: 70%;
     padding: 0;
-    transition: 0.5s;
+    transition: 0.5s !important;
     z-index: 0;
 }
 .forma2 {
     position: absolute;
     height: 15vh;
-    background-color: #183f57;
+    background-color: $azulc20;
     border-top-left-radius: 100px 100px ;
     border-bottom-left-radius: 100px 100px;
     width: 70%;
     padding: 0;
-    transition: 0.5s;
+    transition: 0.5s !important;
     z-index: 0;
 }
 .cont:hover ~ .forma1 {
-    background-color: orange;
+    background-color: $naranjac20;
     width: 105%;
 }
 .cont:hover ~ .forma2 {
-    background-color: orange;
+    background-color: $naranjac20;
     width: 105%;
 }
 .fot1 {
@@ -265,13 +290,68 @@ header {
     width: 180px;
     background-color: rgba(0, 0, 0, 0);
     border-radius: 25px 25px 25px;
-    border: 1px solid yellow;
+    border: 1px solid $amarilloc20;
     transition: 0.5s;
     color: white;
 }
 
 .btn-e:hover {
-    background-color: yellow;
+    background-color: $amarilloc20;
     color: black;
 }
 
+// Proyectos
+
+
+
+
+//Trabajemos juntos
+.frm {
+    background-color: rgb(182, 182, 182);
+}
+.btn-tj {
+    height: 40px;
+    width: 180px;
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 25px 25px 25px;
+    border: 1px solid $verdec20;
+    transition: 0.5s;
+    color: black;
+}
+
+.btn-tj:hover {
+    background-color: $azulc20;
+    color: white;
+}
+
+//FOOTER
+.footer {
+    min-height: 35vh;
+    background-color: rgb(182, 182, 182);
+}
+.containerforma1 {
+    width: 100%;
+    padding: 0;
+    margin-top: 15px;
+    height: 100px;
+}
+.tclqt {
+    padding-top: 1em;
+    margin-bottom: 0.5em;
+}
+.tec {
+    z-index: 10;
+}
+.foo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.trans {
+    display: flex;
+    flex-direction: row;
+    .tl {
+        color: black;
+        margin-right: 15px;
+    }
+}
