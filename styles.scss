@@ -1,23 +1,79 @@
 @import url(node_modules/bootstrap/scss/bootstrap.scss);
 
+$azulc20: #183f57;
+$verdec20: #46b594;
+$amarilloc20: #fecc45;
+$naranjac20: #f08036;
+$verdelc20: #a2ca71;
+
 * {
     padding: 0;
     margin: 0;
+    font-family: 'Barlow', sans-serif !important;
 }
 body {
     width: 100%;
     box-sizing: content-box;
+    overflow-x: hidden;
 }
+
+//Titulos divisorios
+.containerforma {
+    width: 100%;
+    padding: 0;
+    margin-top: 15px;
+    height: 200px;
+}
+.forma-tit {
+    z-index: 1;
+    width: 100%;
+}
+.formasubtit {
+    position: absolute;
+    height: 12vh;
+    background-color: $verdec20;
+    border-top-right-radius: 100px 100px ;
+    border-bottom-right-radius: 100px 100px;
+    width: 70%;
+    padding: 0;
+    z-index: 0;
+}
+.formasubtit2 {
+    position: absolute;
+    height: 12vh;
+    background-color: $verdec20;
+    border-top-left-radius: 100px 100px ;
+    border-bottom-left-radius: 100px 100px;
+    width: 70%;
+    padding: 0;
+    z-index: 0;
+}
+.formasubtit3 {
+    position: absolute;
+    height: 7vh;
+    border-top-left-radius: 100px 100px;
+    border-bottom-left-radius: 100px 100px;
+    border-top-right-radius: 100px 100px;
+    border-bottom-right-radius: 100px 100px;
+    width: 70%;
+    padding: 0;
+    z-index: 0;
+}
+
+
 // HEADER
 header {
     height: 100vh;
+    background-color:rgba(0, 0, 0, 0.65);
+    color: white;
 
     .navbar {
         height: 60px;
-        background-color: rgba(255, 255, 255, 0.501);
+        background-color: rgba(255, 255, 255, 0);
         z-index: 0;
         position: fixed;
         width: 100% !important;
+        transition: 0.3s ease-in-out;
 
         .navbar-nav {
             display: flex;
@@ -28,13 +84,18 @@ header {
             font-size: 2em !important;
         }
         .nl:focus {
-            text-decoration: underline orange 3px;
+            text-decoration: underline $naranjac20 3px;
         }
 
         .trans {
             display: flex;
             flex-direction: row;
         }
+    }
+    .nav-active {
+        background-color:rgb(70, 70, 70);
+        box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.5);
+        z-index: 2;
     }
 
     .hvid {
@@ -49,7 +110,8 @@ header {
         padding-top: 8em !important;
     }
         .tit {
-            color: rgb(0, 0, 0);
+            // color: rgb(0, 0, 0);
+            color: white;
             font-size: 4em;   
         }
         .subtit {
@@ -64,16 +126,232 @@ header {
             width: 180px;
             background-color: rgba(0, 0, 0, 0);
             border-radius: 25px 25px 25px;
-            border: 1px solid orange;
+            border: 1px solid $amarilloc20;
             margin-top: 5%;
             transition: 0.5s;
+            color: white;
         }
 
         .btn:hover {
-            background-color: orange;
+            background-color: $amarilloc20;
+            color: black;
         }
-    
 }
 
-// MAIN
 
+// MAIN
+.first {
+    margin-top: 1.5em;
+}
+.tit_1 {
+    font-size: 1.2em;
+}
+
+
+//servicios
+.servicios {
+    height: 50vh;
+}
+.btn-s {
+    height: 40px;
+    width: 180px;
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 25px 25px 25px;
+    border: 1px solid $verdec20;
+    margin-top: 5%;
+    transition: 0.5s;
+}
+
+.btn-s:hover {
+    background-color: $verdec20;
+}
+
+//Cctp 
+.cctp {
+    height: auto;
+    margin-bottom: 1.5em;
+}
+.secciones {
+    height: 7vh;
+    background-color: $amarilloc20;
+    border-top-right-radius: 100px 100px;
+    border-bottom-right-radius: 100px 100px;
+    border-top-left-radius: 100px 100px;
+    border-bottom-left-radius: 100px 100px;
+    width: 100%;
+    margin-bottom: 25px;
+}
+.sec {
+    width: 100%;
+    height: 100%;
+}
+.sec_cont{
+    margin: 1px;
+}
+.seccion {
+    position: relative;
+    width: 100%;
+    height: 70%;
+}
+.circulo {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    background-color: $naranjac20;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+.seccion:hover {
+    font-weight: bold;
+}
+
+.desc {
+    width: 100%;
+    .imagen {
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.562);
+    }
+}
+
+//Equipo
+.equipo {
+    margin-top: 1.5em;
+    width: 100%;
+    padding: 0;
+}
+.persona {
+    width: 100%;
+    height: 18vh;
+    padding: 0;
+}
+.cont {
+    padding-top: 0.6em;
+    height: 15vh;
+    z-index: 1;
+    width: 100%;
+    color: white;
+}
+.cont:hover {
+    color: black;
+}
+.forma1 {
+    position: absolute;
+    height: 15vh;
+    background-color: $azulc20;
+    border-top-right-radius: 100px 100px ;
+    border-bottom-right-radius: 100px 100px;
+    width: 70%;
+    padding: 0;
+    transition: 0.5s !important;
+    z-index: 0;
+}
+.forma2 {
+    position: absolute;
+    height: 15vh;
+    background-color: $azulc20;
+    border-top-left-radius: 100px 100px ;
+    border-bottom-left-radius: 100px 100px;
+    width: 70%;
+    padding: 0;
+    transition: 0.5s !important;
+    z-index: 0;
+}
+.cont:hover ~ .forma1 {
+    background-color: $naranjac20;
+    width: 105%;
+}
+.cont:hover ~ .forma2 {
+    background-color: $naranjac20;
+    width: 105%;
+}
+.fot1 {
+    position:absolute;
+    object-fit: cover;
+    height: 250px;
+    width: 250px;
+    border-radius: 100%;
+    z-index: 1;
+    left: 10%;
+}
+.fot2 {
+    position:absolute;
+    object-fit: cover;
+    height: 250px;
+    width: 250px;
+    border-radius: 100%;
+    z-index: 1;
+    right: 10%;
+}
+.btn-e {
+    height: 40px;
+    width: 180px;
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 25px 25px 25px;
+    border: 1px solid $amarilloc20;
+    transition: 0.5s;
+    color: white;
+}
+
+.btn-e:hover {
+    background-color: $amarilloc20;
+    color: black;
+}
+
+// Proyectos
+
+
+
+
+//Trabajemos juntos
+.frm {
+    background-color: rgb(182, 182, 182);
+}
+.btn-tj {
+    height: 40px;
+    width: 180px;
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 25px 25px 25px;
+    border: 1px solid $verdec20;
+    transition: 0.5s;
+    color: black;
+}
+
+.btn-tj:hover {
+    background-color: $azulc20;
+    color: white;
+}
+
+//FOOTER
+.footer {
+    min-height: 35vh;
+    background-color: rgb(182, 182, 182);
+}
+.containerforma1 {
+    width: 100%;
+    padding: 0;
+    margin-top: 15px;
+    height: 100px;
+}
+.tclqt {
+    padding-top: 1em;
+    margin-bottom: 0.5em;
+}
+.tec {
+    z-index: 10;
+}
+.foo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.trans {
+    display: flex;
+    flex-direction: row;
+    .tl {
+        color: black;
+        margin-right: 15px;
+    }
+}
