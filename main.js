@@ -18,15 +18,14 @@ document.getElementById('b').style.visibility = 'hidden';
 document.getElementById('c').style.visibility = 'hidden';
 document.getElementById('d').style.visibility = 'hidden';
 
-function a() {
-    document.getElementById('a').style.visibility = 'visible';
-}
-function b() {
-    document.getElementById('b').style.visibility = 'visible';
-}
-function c() {
-    document.getElementById('c').style.visibility = 'visible';
-}
-function d() {
-    document.getElementById('d').style.visibility = 'visible';
+var clic = 1;
+
+function show(c){ 
+    if(clic==1){
+    document.getElementById(`${c}`).style.visibility = 'visible';
+    clic = clic + 1;
+    } else{
+        document.getElementById(`${c}`).style.visibility = 'hidden';      
+        clic = 1;
+    }   
 }
